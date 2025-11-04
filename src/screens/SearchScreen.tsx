@@ -996,7 +996,7 @@ const styles = StyleSheet.create({
   },
   priceRangeText: {
     fontSize: 12,
-    fontFamily: ' Filters.fontFamily: 'SFProDisplay-SemiBold',
+    fontFamily: 'SFProDisplay-SemiBold',
   },
   distanceOptions: {
     flexDirection: 'row',
