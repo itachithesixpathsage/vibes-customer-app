@@ -850,6 +850,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  content: {
+    flex: 1,
+    marginTop: 120, // Account for fixed header
+  },
   searchHeader: {
     flexDirection: 'row',
     alignItems: 'center',
