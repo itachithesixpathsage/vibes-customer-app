@@ -22,7 +22,7 @@ import { LoadingStates } from '@components/common';
 import { theme } from '@theme/index';
 import { searchRestaurants } from '@store/slices/restaurantSlice';
 import { RootState } from '@store/index';
-import { isValidEmail } from '@utils/index';
+import { formatCurrency } from '@utils/index';
 import { RestaurantSearchFilters } from '@types/restaurant';
 
 const { width, height } = Dimensions.get('window');
