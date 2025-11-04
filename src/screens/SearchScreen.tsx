@@ -1205,32 +1205,9 @@ const styles = StyleSheet.create({
     fontSize: 10,
     fontFamily: 'SFProDisplay-Regular',
   },
-  restaurantMeta: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  metaItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  metaIcon: {
-    marginRight: 4,
-  },
-  metaText: {
-    fontSize: 12,
-    fontFamily: 'SFProDisplay-Regular',
-  },
-  priceRange: {
-    fontSize: 12,
-    fontFamily: 'SFProDisplay-SemiBold',
-  },
-  priceRangeText: {
-    fontSize: 12,
-    fontFamily: 'SFProDisplay-SemiBold',
-  },
   listContent: {
     flexGrow: 1,
+    paddingTop: 60, // Account for fixed header
   },
 });
 
