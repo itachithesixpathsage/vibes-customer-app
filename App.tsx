@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 // Import our simplified navigation
-import AppNavigator from './src/navigation/AppNavigator';
+import SimpleNavigator from './src/navigation/SimpleNavigator';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -24,7 +24,7 @@ const App: React.FC = () => {
         hidden={false}
         networkActivityIndicatorVisible={true}
       />
-      <AppNavigator />
+      <SimpleNavigator />
     </GestureHandlerRootView>
   );
 };
