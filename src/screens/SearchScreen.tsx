@@ -247,6 +247,12 @@ const SearchScreen: React.FC = () => {
     performSearch(filters);
   };
 
+  const handleRestaurantPress = (restaurantId: string) => {
+    // Navigate to restaurant details screen
+    // This will be implemented when we create the restaurant screen
+    console.log('Navigate to restaurant:', restaurantId);
+  };
+
   const renderSearchHeader = () => (
     <View style={styles.searchHeader}>
       <TouchableOpacity
