@@ -1205,9 +1205,53 @@ const styles = StyleSheet.create({
     fontSize: 10,
     fontFamily: 'SFProDisplay-Regular',
   },
+  restaurantMeta: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
   listContent: {
     flexGrow: 1,
     paddingTop: 60, // Account for fixed header
+  },
+  filterModal: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    backgroundColor: 'rgba(0,0,0,0.5)',
+  },
+  filterHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 20,
+    backgroundColor: '#2D1A3A',
+    borderTopLeftRadius: 24,
+    borderTopRightRadius: 24,
+  },
+  filterCloseButton: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(255,255,255,0.1)',
+  },
+  filterSectionTitle: {
+    fontSize: 16,
+    fontFamily: 'SFProDisplay-Semibold',
+    marginBottom: 12,
+  },
+  sectionTitle: {
+    fontSize: 18,
+    fontFamily: 'SFProDisplay-Bold',
+    marginBottom: 16,
+  },
+  activeSearchInput: {
+    padding: 8,
+  },
+  selectedFilter: {
+    borderWidth: 1,
+    borderColor: '#854798',
   },
 });
 
