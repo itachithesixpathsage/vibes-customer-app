@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { StatusBar, LogBox } from 'react-native';
-import { Provider } from 'react-redux';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 // Import our simplified navigation
