@@ -809,33 +809,39 @@ const SearchScreen: React.FC = () => {
     >
       {renderSearchHeader()}
 
-      {showFilters && renderFilterModal()}
+      <ScrollView
+        style={styles.content}
+        contentContainerStyle={styles.listContent}
+        showsVerticalScrollIndicator={false}
+      >
+        {showFilters && renderFilterModal()}
 
-      {searchQuery && (
-        <View style={styles.activeSearchContainer}>
-          <TouchableOpacity
-            style={styles.activeSearchInput}
-            onPress={() => {
-              setShowFilters(false);
-              searchInputRef.current?.focus();
-            }}
-          >
-            <Icon
-              name="search"
-              size={20}
-              color={colors.septenary}
-              style={styles.activeSearchIcon}
-            />
-          </TouchableOpacity>
-          <Text style={[styles.activeSearchText, { color: colors.text }]}>
-            {searchQuery}
-          </Text>
-        </View>
-      )}
+        {searchQuery && (
+          <View style={styles.activeSearchContainer}>
+            <TouchableOpacity
+              style={styles.activeSearchInput}
+              onPress={() => {
+                setShowFilters(false);
+                searchInputRef.current?.focus();
+              }}
+            >
+              <Icon
+                name="search"
+                size={20}
+                color={colors.septenary}
+                style={styles.activeSearchIcon}
+              />
+            </TouchableOpacity>
+            <Text style={[styles.activeSearchText, { color: colors.text }]}>
+              {searchQuery}
+            </Text>
+          </View>
+        )}
 
-      {recentSearches.length > 0 && !searchQuery && renderRecentSearches()}
+        {recentSearches.length > 0 && !searchQuery && renderRecentSearches()}
 
-      {(searchQuery || searchResults.length > 0 || isLoading) && renderSearchResults()}
+        {(searchQuery || searchResults.length > 0 || isLoading) && renderSearchResults()}
+      </ScrollView>
     </LinearGradient>
   );
 };
