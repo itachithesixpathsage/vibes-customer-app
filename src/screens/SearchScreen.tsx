@@ -23,7 +23,7 @@ import { RootState } from '@store/index';
 import { isValidEmail } from '@utils/index';
 import { RestaurantSearchFilters } from '@types/restaurant';
 
-const { width, height } = Dimensions.get('window';
+const { width, height } = Dimensions.get('window');
 
 const SearchScreen: React.FC = () => {
   const navigation = useNavigation();
