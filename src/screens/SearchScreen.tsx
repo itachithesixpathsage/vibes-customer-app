@@ -44,7 +44,7 @@ const SearchScreen: React.FC = () => {
     priceRange: routeParams.filters?.priceRange || [],
     rating: routeParams.filters?.rating || 0,
     deliveryTime: routeParams.filters?.deliveryTime,
-    distance: routeParams?.distance,
+    distance: routeParams.filters?.distance,
     features: routeParams.filters?.features || [],
     dietary: routeParams.filters?.dietary || [],
     sortBy: routeParams.filters?.sortBy || 'relevance',
