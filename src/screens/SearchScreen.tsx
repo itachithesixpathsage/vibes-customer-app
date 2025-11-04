@@ -1064,10 +1064,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.2)',
   },
-  clearFiltersButton: {
-    fontSize: 14,
-    fontFamily: 'SFProDisplay-Medium',
-  },
   applyFiltersButtonContainer: {
     paddingHorizontal: 20,
     marginBottom: 40,
