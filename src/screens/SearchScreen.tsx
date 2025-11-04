@@ -1111,7 +1111,6 @@ const styles = StyleSheet.create({
   resultsCount: {
     fontSize: 14,
     fontFamily: 'SFProDisplay-Medium',
-    color: colors.textSecondary,
     marginTop: 8,
     marginBottom: 16,
   },
