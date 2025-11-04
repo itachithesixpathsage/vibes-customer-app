@@ -3,8 +3,7 @@ import { StatusBar, LogBox } from 'react-native';
 import { Provider } from 'react-redux';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-import { store } from './src/store/index';
-import { theme } from '@theme/index';
+// Import our simplified navigation
 import AppNavigator from './src/navigation/AppNavigator';
 
 const App: React.FC = () => {
@@ -18,16 +17,14 @@ const App: React.FC = () => {
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Provider store={store}>
-        <StatusBar
-          barStyle={theme.statusBarStyle}
-          backgroundColor={theme.colors.background}
-          translucent={false}
-          hidden={false}
-          networkActivityIndicatorVisible={true}
-        />
-        <AppNavigator />
-      </Provider>
+      <StatusBar
+        barStyle="dark-content"
+        backgroundColor="#1A0A1A"
+        translucent={false}
+        hidden={false}
+        networkActivityIndicatorVisible={true}
+      />
+      <AppNavigator />
     </GestureHandlerRootView>
   );
 };
