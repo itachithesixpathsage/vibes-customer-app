@@ -57,6 +57,7 @@ export const selectAuth = (state: RootState) => state.auth;
 export const selectRestaurant = (state: RootState) => state.restaurant;
 export const selectCart = (state: RootState) => state.cart;
 export const selectOrder = (state: RootState) => state.order;
+export const selectUser = (state: RootState) => state.user;
 export const selectLocation = (state: RootState) => state.location;
 
 // Common selectors
