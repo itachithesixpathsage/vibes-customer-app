@@ -7,6 +7,8 @@ import {
   ScrollView,
   Dimensions,
   Alert,
+  Text,
+  TouchableOpacity,
 } from 'react-native';
 import { LinearGradient } from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/Ionicons';
