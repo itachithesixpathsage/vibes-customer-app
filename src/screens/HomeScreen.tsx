@@ -436,7 +436,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   headerPlaceholder: {
-    backgroundColor: colors.background,
+    backgroundColor: '#1A0A1A',
   },
   locationHeader: {
     flexDirection: 'row',
