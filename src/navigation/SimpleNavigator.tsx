@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+
+import { store, persistor } from '../store/index';
+import { useAuth } from '../hooks/useAuth';
 
 // Import screens
 import SplashScreen from '@screens/SplashScreen';
+import OnboardingScreen from '@screens/OnboardingScreen';
+import LoginScreen from '@screens/auth/LoginScreen';
+import RegisterScreen from '@screens/auth/RegisterScreen';
+import ForgotPasswordScreen from '@screens/auth/ForgotPasswordScreen';
 import HomeScreen from '@screens/HomeScreen';
 import SearchScreen from '@screens/SearchScreen';
 import RestaurantScreen from '@screens/RestaurantScreen';
@@ -13,9 +22,8 @@ import MealDetailScreen from '@screens/MealDetailScreen';
 import CartScreen from '@screens/CartScreen';
 import CheckoutScreen from '@screens/CheckoutScreen';
 import OrderTrackingScreen from '@screens/OrderTrackingScreen';
+import OrderHistoryScreen from '@screens/OrderHistoryScreen';
 import ProfileScreen from '@screens/ProfileScreen';
-import LoginScreen from '@screens/auth/LoginScreen';
-import RegisterScreen from '@screens/auth/RegisterScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
