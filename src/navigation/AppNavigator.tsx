@@ -170,7 +170,21 @@ const AppNavigator = () => {
           <>
             <Stack.Screen name="Splash" component={SplashScreen} />
             <Stack.Screen name="Onboarding" component={OnboardingScreen} />
-            <Stack.Screen name="Auth" component={AuthNavigator} />
+            <Stack.Screen
+              name="Login"
+              component={LoginScreen}
+              options={{ presentation: 'modal' }}
+            />
+            <Stack.Screen
+              name="Register"
+              component={RegisterScreen}
+              options={{ presentation: 'modal' }}
+            />
+            <Stack.Screen
+              name="ForgotPassword"
+              component={ForgotPasswordScreen}
+              options={{ presentation: 'modal' }}
+            />
           </>
         ) : (
           // Main app flow
