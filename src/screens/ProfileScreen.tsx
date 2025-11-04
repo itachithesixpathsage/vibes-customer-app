@@ -14,11 +14,6 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { useDispatch, useSelector } from 'react-redux';
 import { Linking } from 'react-native';
-import { launchURL } from 'expo-linking';
-import { LinearGradient } from 'react-native-linear-gradient';
-import Icon from 'react-native-vector-icons/Ionicons';
-import { useNavigation } from '@react-navigation/native';
-import { useDispatch, useSelector } from 'react-redux';
 
 import { Button, Input } from '@components/common';
 import { theme } from '@theme/index';
