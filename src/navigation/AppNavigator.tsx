@@ -9,13 +9,16 @@ import { RootState } from '@store/index';
 import { RootStackParamList, MainTabParamList } from '@types/navigation';
 import { theme } from '@theme/index';
 
-// Import screens (will create these later)
+// Import screens
 import SplashScreen from '@screens/SplashScreen';
 import OnboardingScreen from '@screens/OnboardingScreen';
-import AuthNavigator from './AuthNavigator';
+import LoginScreen from '@screens/auth/LoginScreen';
+import RegisterScreen from '@screens/auth/RegisterScreen';
+import ForgotPasswordScreen from '@screens/auth/ForgotPasswordScreen';
 import HomeScreen from '@screens/HomeScreen';
 import SearchScreen from '@screens/SearchScreen';
-import CartScreen from '@screens/cart/CartScreen';
+import CartScreen from '@screens/CartScreen';
+import CheckoutScreen from '@screens/CheckoutScreen';
 import OrderHistoryScreen from '@screens/OrderHistoryScreen';
 import ProfileScreen from '@screens/ProfileScreen';
 import RestaurantScreen from '@screens/RestaurantScreen';
