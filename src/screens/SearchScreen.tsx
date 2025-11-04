@@ -1062,7 +1062,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: colors.surfaceDark,
+    borderColor: 'rgba(255,255,255,0.2)',
   },
   clearFiltersButton: {
     fontSize: 14,
