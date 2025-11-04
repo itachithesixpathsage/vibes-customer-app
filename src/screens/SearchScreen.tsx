@@ -9,6 +9,8 @@ import {
   TextInput,
   TouchableOpacity,
   Modal,
+  Text,
+  ScrollView,
 } from 'react-native';
 import { LinearGradient } from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/Ionicons';
