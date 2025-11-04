@@ -25,6 +25,7 @@ const rootReducer = combineReducers({
   restaurant: restaurantSlice,
   cart: cartSlice,
   order: orderSlice,
+  user: userSlice,
   location: locationSlice,
 });
 
