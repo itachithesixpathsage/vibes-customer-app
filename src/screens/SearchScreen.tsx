@@ -889,7 +889,6 @@ const styles = StyleSheet.create({
     marginRight: 12,
   },
   activeSearchText: {
-    color: colors.text,
     fontSize: 16,
     fontFamily: 'SFProDisplay-Regular',
   },
