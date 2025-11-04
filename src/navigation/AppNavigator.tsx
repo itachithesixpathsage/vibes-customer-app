@@ -2,14 +2,9 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { useSelector } from 'react-redux';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-import { RootState } from '@store/index';
-import { RootStackParamList, MainTabParamList } from '@types/navigation';
-import { theme } from '@theme/index';
-
-// Import screens
+// Import screens directly without Redux for now
 import SplashScreen from '@screens/SplashScreen';
 import OnboardingScreen from '@screens/OnboardingScreen';
 import LoginScreen from '@screens/auth/LoginScreen';
@@ -24,8 +19,8 @@ import ProfileScreen from '@screens/ProfileScreen';
 import RestaurantScreen from '@screens/RestaurantScreen';
 import OrderTrackingScreen from '@screens/OrderTrackingScreen';
 
-const Stack = createStackNavigator<RootStackParamList>();
-const Tab = createBottomTabNavigator<MainTabParamList>();
+const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
 const MainTabNavigator = () => {
   const { colors, spacing } = theme;
