@@ -210,6 +210,44 @@ const AppNavigator = () => {
               }}
             />
             <Stack.Screen
+              name="MealDetail"
+              component={MealDetailScreen}
+              options={{
+                headerShown: true,
+                title: 'Menu Item',
+                headerStyle: {
+                  backgroundColor: colors.background,
+                  shadowColor: 'transparent',
+                  elevation: 0,
+                },
+                headerTintColor: colors.text,
+                headerTitleStyle: {
+                  fontFamily: theme.typography.fontFamily.semiBold,
+                  fontSize: 18,
+                },
+                presentation: 'modal',
+              }}
+            />
+            <Stack.Screen
+              name="Checkout"
+              component={CheckoutScreen}
+              options={{
+                headerShown: true,
+                title: 'Checkout',
+                headerStyle: {
+                  backgroundColor: colors.background,
+                  shadowColor: 'transparent',
+                  elevation: 0,
+                },
+                headerTintColor: colors.text,
+                headerTitleStyle: {
+                  fontFamily: theme.typography.fontFamily.semiBold,
+                  fontSize: 18,
+                },
+                presentation: 'modal',
+              }}
+            />
+            <Stack.Screen
               name="OrderTracking"
               component={OrderTrackingScreen}
               options={{
