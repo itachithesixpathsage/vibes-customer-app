@@ -13,8 +13,8 @@
     "clean": "react-native clean"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-native": "0.73.0",
+    "react": "18.3.1",
+    "react-native": "0.73.12",
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/stack": "^6.3.20",
     "@react-navigation/bottom-tabs": "^6.5.11",
