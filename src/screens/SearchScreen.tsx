@@ -985,6 +985,21 @@ const styles = StyleSheet.create({
     fontFamily: 'SFProDisplay-Medium',
     textAlign: 'center',
   },
+  metaItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  metaIcon: {
+    marginRight: 4,
+  },
+  metaText: {
+    fontSize: 12,
+    fontFamily: 'SFProDisplay-Regular',
+  },
+  priceRange: {
+    fontSize: 12,
+    fontFamily: 'SFProDisplay-SemiBold',
+  },
   priceRangeText: {
     fontSize: 12,
     fontFamily: 'SFProDisplay-SemiBold',
