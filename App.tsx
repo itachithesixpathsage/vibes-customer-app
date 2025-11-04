@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { StatusBar, LogBox } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-// Import our simplified navigation
-import SimpleNavigator from './src/navigation/SimpleNavigator';
+// Import our Redux navigation
+import ReduxNavigator from './src/navigation/ReduxNavigator';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const App: React.FC = () => {
         hidden={false}
         networkActivityIndicatorVisible={true}
       />
-      <SimpleNavigator />
+      <ReduxNavigator />
     </GestureHandlerRootView>
   );
 };
