@@ -908,7 +908,7 @@ const styles = StyleSheet.create({
   activeFilterButton: {
     backgroundColor: 'rgba(133, 71, 152, 0.3)',
     borderWidth: 1,
-    borderColor: colors.septenary,
+    borderColor: '#854798',
   },
   filterTitle: {
     fontSize: 18,
