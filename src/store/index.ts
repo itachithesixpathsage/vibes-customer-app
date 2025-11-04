@@ -9,13 +9,14 @@ import restaurantSlice from './slices/restaurantSlice';
 import cartSlice from './slices/cartSlice';
 import orderSlice from './slices/orderSlice';
 import locationSlice from './slices/locationSlice';
+import userSlice from './slices/userSlice';
 
 // Persist configuration
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  whitelist: ['auth', 'cart', 'location'], // Only persist these slices
-  blacklist: ['restaurant'], // Don't persist restaurant data
+  whitelist: ['auth', 'cart', 'user', 'location'], // Persist these slices
+  blacklist: ['restaurant', 'order'], // Don't persist these slices
 };
 
 // Root reducer
