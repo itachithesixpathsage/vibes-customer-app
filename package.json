@@ -8,9 +8,15 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "type-check": "tsc --noEmit",
-    "clean": "react-native clean"
+    "clean": "react-native clean",
+    "clean:all": "react-native clean && rm -rf node_modules && npm install",
+    "build:android": "cd android && ./gradlew assembleRelease",
+    "build:ios": "cd ios && xcodebuild -workspace *.xcworkspace -scheme * -configuration Release archive"
   },
   "dependencies": {
     "react": "18.3.1",
