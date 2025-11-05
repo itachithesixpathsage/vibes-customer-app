@@ -6,24 +6,25 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
-import { store, persistor } from '../store/index';
+import { store, persistor } from '../store';
 import { useAuth } from '../hooks/useAuth';
+import { useSelector } from 'react-redux';
 
 // Import screens
-import SplashScreen from '@screens/SplashScreen';
-import OnboardingScreen from '@screens/OnboardingScreen';
-import LoginScreen from '@screens/auth/LoginScreen';
-import RegisterScreen from '@screens/auth/RegisterScreen';
-import ForgotPasswordScreen from '@screens/auth/ForgotPasswordScreen';
-import HomeScreen from '@screens/HomeScreen';
-import SearchScreen from '@screens/SearchScreen';
-import RestaurantScreen from '@screens/RestaurantScreen';
-import MealDetailScreen from '@screens/MealDetailScreen';
-import CartScreen from '@screens/CartScreen';
-import CheckoutScreen from '@screens/CheckoutScreen';
-import OrderTrackingScreen from '@screens/OrderTrackingScreen';
-import OrderHistoryScreen from '@screens/OrderHistoryScreen';
-import ProfileScreen from '@screens/ProfileScreen';
+import SplashScreen from '../screens/SplashScreen';
+import OnboardingScreen from '../screens/OnboardingScreen';
+import LoginScreen from '../screens/auth/LoginScreen';
+import RegisterScreen from '../screens/auth/RegisterScreen';
+import ForgotPasswordScreen from '../screens/auth/ForgotPasswordScreen';
+import HomeScreen from '../screens/HomeScreen';
+import SearchScreen from '../screens/SearchScreen';
+import RestaurantScreen from '../screens/RestaurantScreen';
+import MealDetailScreen from '../screens/MealDetailScreen';
+import CartScreen from '../screens/CartScreen';
+import CheckoutScreen from '../screens/CheckoutScreen';
+import OrderTrackingScreen from '../screens/OrderTrackingScreen';
+import OrderHistoryScreen from '../screens/OrderHistoryScreen';
+import ProfileScreen from '../screens/ProfileScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
