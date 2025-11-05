@@ -1,8 +1,6 @@
-import { useSelector, TypedUseSelectorHook } from 'react-redux';
-import { RootState } from '@store/index';
 import { useSelector } from 'react-redux';
-import { selectIsAuthenticated, selectCurrentUser, selectAuthLoading, selectAuthError } from '@store/index';
-import { RootState } from '@store/index';
+import { RootState } from '../store';
+import { selectIsAuthenticated, selectCurrentUser, selectAuthLoading, selectAuthError } from '../store';
 
 // Typed hook for auth state
 export const useAuth = () => {
