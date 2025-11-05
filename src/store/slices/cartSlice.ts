@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import { Cart, CartItem, PromoCode, AddToCartRequest, UpdateCartItemRequest } from '@types/cart';
-import { cartService } from '@services/cartService';
+import { cartService } from '../services/cartService';
 
 interface CartState {
   cart: Cart | null;
