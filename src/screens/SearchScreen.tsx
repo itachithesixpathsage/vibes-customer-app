@@ -17,13 +17,12 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Button, Input } from '@components/common';
-import { LoadingStates } from '@components/common';
-import { theme } from '@theme/index';
-import { searchRestaurants } from '@store/slices/restaurantSlice';
-import { RootState } from '@store/index';
-import { formatCurrency } from '@utils/index';
-import { RestaurantSearchFilters } from '@types/restaurant';
+import { Button, Input, LoadingStates } from '../components/common';
+import { theme } from '../theme';
+import { searchRestaurants } from '../store/slices/restaurantSlice';
+import { RootState } from '../store';
+import { formatCurrency } from '../utils';
+import { RestaurantSearchFilters } from '../types/restaurant';
 
 const { width, height } = Dimensions.get('window');
 
