@@ -281,7 +281,6 @@ const ReduxNavigator: React.FC = () => {
           </Stack.Navigator>
         </NavigationContainer>
       </PersistGate>
-    </Provider>
   );
 };
 
