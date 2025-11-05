@@ -17,16 +17,18 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-      <StatusBar
-        barStyle="dark-content"
-        backgroundColor="#1A0A1A"
-        translucent={false}
-        hidden={false}
-        networkActivityIndicatorVisible={true}
-      />
-      <ReduxNavigator />
-    </GestureHandlerRootView>
+    <Provider store={store}>
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <StatusBar
+          barStyle="dark-content"
+          backgroundColor="#1A0A1A"
+          translucent={false}
+          hidden={false}
+          networkActivityIndicatorVisible={true}
+        />
+        <ReduxNavigator />
+      </GestureHandlerRootView>
+    </Provider>
   );
 };
 
