@@ -132,10 +132,9 @@ const ReduxNavigator: React.FC = () => {
   }, [user]);
 
   return (
-    <Provider store={store}>
-      <PersistGate loading={null}>
-        <NavigationContainer>
-          <Stack.Navigator
+    <PersistGate loading={null} persistor={persistor}>
+      <NavigationContainer>
+        <Stack.Navigator
             screenOptions={{
               headerShown: false,
               gestureEnabled: true,
