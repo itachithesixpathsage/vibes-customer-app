@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import { StatusBar, LogBox } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { Provider } from 'react-redux';
 
-// Import our Redux navigation
+// Import Redux store and navigation
+import { store } from './src/store';
 import ReduxNavigator from './src/navigation/ReduxNavigator';
 
 const App: React.FC = () => {
