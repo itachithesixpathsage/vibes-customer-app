@@ -3,7 +3,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import { store, persistor } from '../store';
