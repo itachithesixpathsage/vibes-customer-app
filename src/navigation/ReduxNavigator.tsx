@@ -30,7 +30,7 @@ const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const MainTabs = () => {
-  const { items: cartItems } = useAuth((state: any) => state.cart);
+  const { items: cartItems } = useSelector((state: any) => state.cart);
 
   return (
     <Tab.Navigator
